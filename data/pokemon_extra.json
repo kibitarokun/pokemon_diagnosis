@@ -1,0 +1,12 @@
+[
+  {"name": "bulbasaur", "personality": "おだやか", "like": "日なたぼっこ", "dislike": "寒さ", "age": 5, "gender": "♂"},
+  {"name": "ivysaur", "personality": "まじめ", "like": "成長", "dislike": "暗い場所", "age": 8, "gender": "♂"},
+  {"name": "charmander", "personality": "せっかち", "like": "炎", "dislike": "水", "age": 4, "gender": "♂"},
+  {"name": "squirtle", "personality": "のんびり", "like": "水遊び", "dislike": "暑さ", "age": 6, "gender": "♂"},
+  {"name": "pikachu", "personality": "やんちゃ", "like": "木の実", "dislike": "大きな音", "age": 3, "gender": "♂"},
+  {"name": "jigglypuff", "personality": "おっとり", "like": "歌うこと", "dislike": "眠れない夜", "age": 4, "gender": "♀"},
+  {"name": "meowth", "personality": "ずるがしこい", "like": "コイン", "dislike": "犬", "age": 5, "gender": "♂"},
+  {"name": "psyduck", "personality": "ぼんやり", "like": "水辺", "dislike": "頭痛", "age": 6, "gender": "♀"},
+  {"name": "machop", "personality": "がんばりや", "like": "トレーニング", "dislike": "怠けること", "age": 7, "gender": "♂"},
+  {"name": "caterpie", "personality": "おくびょう", "like": "葉っぱ", "dislike": "鳥ポケモン", "age": 2, "gender": "♀"}
+]

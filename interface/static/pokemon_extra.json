@@ -1,0 +1,12 @@
+[
+  {"name": "bulbasaur", "personality": "おだやか", "like": "日なたぼっこ", "dislike": "寒さ"},
+  {"name": "ivysaur", "personality": "まじめ", "like": "成長", "dislike": "暗い場所"},
+  {"name": "charmander", "personality": "せっかち", "like": "炎", "dislike": "水"},
+  {"name": "squirtle", "personality": "のんびり", "like": "水遊び", "dislike": "暑さ"},
+  {"name": "pikachu", "personality": "やんちゃ", "like": "木の実", "dislike": "大きな音"},
+  {"name": "jigglypuff", "personality": "おっとり", "like": "歌うこと", "dislike": "眠れない夜"},
+  {"name": "meowth", "personality": "ずるがしこい", "like": "コイン", "dislike": "犬"},
+  {"name": "psyduck", "personality": "ぼんやり", "like": "水辺", "dislike": "頭痛"},
+  {"name": "machop", "personality": "がんばりや", "like": "トレーニング", "dislike": "怠けること"},
+  {"name": "caterpie", "personality": "おくびょう", "like": "葉っぱ", "dislike": "鳥ポケモン"}
+]

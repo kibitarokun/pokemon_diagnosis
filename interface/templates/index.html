@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ポケモン診断アプリ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kosugi Maru', sans-serif;
+            background: #f7f6e7;
+            color: #444;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 480px;
+            margin: 40px auto;
+            background: #fffbe7;
+            border-radius: 18px;
+            box-shadow: 0 4px 16px #e0d9b5;
+            padding: 32px 24px 24px 24px;
+        }
+        h1 {
+            text-align: center;
+            color: #ffb347;
+            margin-bottom: 16px;
+        }
+        form {
+            margin-bottom: 24px;
+        }
+        label {
+            font-size: 1.1em;
+            color: #ffb347;
+        }
+        select, .stat-group {
+            width: 100%;
+            margin-bottom: 16px;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ffe4a1;
+            background: #fff;
+        }
+        .stat-group label {
+            color: #888;
+            font-size: 0.95em;
+            margin-right: 12px;
+        }
+        button {
+            background: #ffb347;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 24px;
+            font-size: 1.1em;
+            cursor: pointer;
+            box-shadow: 0 2px 8px #ffe4a1;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #ffcc80;
+        }
+        .result {
+            margin-top: 24px;
+            text-align: center;
+        }
+        .poke-card {
+            display: inline-block;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px #ffe4a1;
+            margin: 12px;
+            padding: 16px 12px 8px 12px;
+            width: 140px;
+        }
+        .poke-card img {
+            width: 96px;
+            height: 96px;
+            margin-bottom: 8px;
+        }
+        .poke-card .name {
+            font-weight: bold;
+            color: #ffb347;
+            font-size: 1.1em;
+        }
+        .poke-card .types {
+            font-size: 0.95em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>ポケモン診断アプリ</h1>
+    <form method="post">
+        <label>自分に近いタイプ</label><br>
+        <select name="types" multiple>
+            {% for t, t_jp in all_types %}
+            <option value="{{ t }}">{{ t_jp }}</option>
+            {% endfor %}
+        </select>
+        <label>自分の特徴・特性</label><br>
+        <select name="abilities" multiple>
+            {% for a, a_jp in all_abilities %}
+            <option value="{{ a }}">{{ a_jp }}</option>
+            {% endfor %}
+        </select>
+        <label>重視する能力（複数選択可）</label><br>
+        <div class="stat-group">
+            {% for s, s_jp in all_stats %}
+            <label><input type="checkbox" name="important_stats" value="{{ s }}">{{ s_jp }}</label>
+            {% endfor %}
+        </div>
+        <label>性格</label><br>
+        <select name="personality">
+            <option value="">選択してください</option>
+            {% for p in personalities %}
+            <option value="{{ p }}">{{ p }}</option>
+            {% endfor %}
+        </select>
+        <label>好きな活動・趣味</label><br>
+        <div class="stat-group">
+            {% for a in activities %}
+            <label><input type="checkbox" name="activities" value="{{ a }}">{{ a }}</label>
+            {% endfor %}
+        </div>
+        <!-- <input type="text" name="activities_text" placeholder="その他（自由記述）" style="width:100%;margin-bottom:12px;"> -->
+        <label>苦手なこと</label><br>
+        <div class="stat-group">
+            {% for d in dislikes %}
+            <label><input type="checkbox" name="dislikes" value="{{ d }}">{{ d }}</label>
+            {% endfor %}
+        </div>
+        <!-- <input type="text" name="dislikes_text" placeholder="その他（自由記述）" style="width:100%;margin-bottom:12px;"> -->
+        <!-- 年齢・性別は診断から除外 -->
+        <button type="submit">診断する</button>
+    </form>
+    {% if result %}
+    <div class="result">
+        <h2>あなたに近いポケモン</h2>
+        <div class="poke-card" style="cursor:pointer;" data-idx="0">
+            <img src="{{ result.best.image_url }}" alt="{{ result.best.name }}">
+            <div class="name">{{ result.best.name|capitalize }}</div>
+            <div class="types">{{ result.best.types|join(', ') }}</div>
+            <div style="color:#ffb347;font-size:0.98em;margin-top:4px;">マッチ度: {{ result.best.match_percent }}%</div>
+        </div>
+        <h3 style="margin-top:24px;color:#7ec850;">仲良しポケモン</h3>
+        <div class="poke-card" style="cursor:pointer;" data-idx="1">
+            <img src="{{ result.friend.image_url }}" alt="{{ result.friend.name }}">
+            <div class="name">{{ result.friend.name|capitalize }}</div>
+            <div class="types">{{ result.friend.types|join(', ') }}</div>
+            <div style="color:#7ec850;font-size:0.98em;margin-top:4px;">仲良し度: {{ result.friend.match_percent }}%</div>
+        </div>
+        <h3 style="margin-top:24px;color:#e57373;">天敵ポケモン</h3>
+        <div class="poke-card" style="cursor:pointer;" data-idx="2">
+            <img src="{{ result.enemy.image_url }}" alt="{{ result.enemy.name }}">
+            <div class="name">{{ result.enemy.name|capitalize }}</div>
+            <div class="types">{{ result.enemy.types|join(', ') }}</div>
+            <div style="color:#e57373;font-size:0.98em;margin-top:4px;">天敵度: {{ result.enemy.match_percent }}%</div>
+        </div>
+        <!-- モーダルウィンドウ -->
+        <div id="modal-bg" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.3);z-index:1000;">
+            <div id="modal" style="background:#fffbe7;border-radius:16px;max-width:340px;margin:60px auto 0 auto;padding:24px 18px;box-shadow:0 4px 24px #e0d9b5;position:relative;">
+                <span id="modal-close" style="position:absolute;top:8px;right:16px;font-size:1.5em;cursor:pointer;color:#ffb347;">&times;</span>
+                <div id="modal-content"></div>
+            </div>
+        </div>
+        <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            // best, friend, enemyを配列化してインデックスでアクセスできるようにする
+            const pokeData = JSON.parse('{{ [result.best, result.friend, result.enemy]|tojson }}');
+            // 独自データをfetchで取得
+            let pokeExtra = {};
+            fetch('/static/pokemon_extra.json')
+                .then(r => r.json())
+                .then(arr => {
+                    arr.forEach(e => { pokeExtra[e.name] = e; });
+                });
+            document.querySelectorAll('.poke-card').forEach(function(card) {
+                card.addEventListener('click', function() {
+                    const idx = this.getAttribute('data-idx');
+                    showModal(idx);
+                });
+            });
+            document.getElementById('modal-close').onclick = function() {
+                document.getElementById('modal-bg').style.display = 'none';
+            };
+            document.getElementById('modal-bg').onclick = function(e) {
+                if (e.target === this) this.style.display = 'none';
+            };
+            function showModal(idx) {
+                const p = pokeData[idx];
+                let html = `<div style='text-align:center;'>`;
+                html += `<img src='${p.image_url}' alt='${p.name}' style='width:120px;height:120px;margin-bottom:8px;'>`;
+                html += `<div style='font-weight:bold;font-size:1.2em;color:#ffb347;'>${p.name.charAt(0).toUpperCase() + p.name.slice(1)}</div>`;
+                html += `<div style='color:#888;'>タイプ: ${p.types.join(', ')}</div>`;
+                html += `<div style='color:#888;'>特性: ${p.abilities.join(', ')}</div>`;
+                html += `<div style='margin-top:8px;'>`;
+                html += `<table style='margin:0 auto;font-size:0.95em;'>`;
+                for (const [k, v] of Object.entries(p.stats)) {
+                    html += `<tr><td style='color:#ffb347;padding-right:8px;'>${k.replace('-', ' ').replace('special', '特').replace('attack', '攻').replace('defense', '防').replace('hp', 'HP').replace('speed', 'すばやさ')}</td><td>${v}</td></tr>`;
+                }
+                html += `</table></div>`;
+                if (p.flavor_text) {
+                    html += `<div style='margin-top:12px;text-align:left;font-size:0.98em;background:#fffbe7;border-radius:8px;padding:8px 10px;'>`;
+                    html += `<b>特徴:</b><br>${p.flavor_text}`;
+                    html += `</div>`;
+                }
+                // 追加: 独自データ
+                const extra = pokeExtra[p.name];
+                if (extra) {
+                    html += `<div style='margin-top:12px;text-align:left;font-size:0.98em;background:#f0f8ff;border-radius:8px;padding:8px 10px;'>`;
+                    html += `<b>性格:</b> ${extra.personality || '-'}<br>`;
+                    html += `<b>好きなこと:</b> ${extra.like || '-'}<br>`;
+                    html += `<b>苦手なこと:</b> ${extra.dislike || '-'}<br>`;
+                    html += `</div>`;
+                }
+                html += `</div>`;
+                document.getElementById('modal-content').innerHTML = html;
+                document.getElementById('modal-bg').style.display = 'block';
+            }
+            window.showModal = showModal;
+        });
+        </script>
+    </div>
+    {% endif %}
+</div>
+</body>
+</html>
