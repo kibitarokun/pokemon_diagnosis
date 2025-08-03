@@ -10,8 +10,8 @@ def load_metadata():
         pokemons = json.load(f)
     all_types = sorted({t for p in pokemons for t in p['types']})
     all_abilities = sorted({a for p in pokemons for a in p['abilities']})
-    personalities = ['おだやか','せっかち','まじめ','おっとり','やんちゃ','ずるがしこい','がんばりや','おくびょう','のんびり']
-    activities = ['スポーツ','読書','音楽','冒険','料理','ゲーム','自然散策','友達と遊ぶ']
+    personalities = ['おだやか','せっかち','真面目','おっとり','やんちゃ','ずる賢い','がんばり屋','おく病','のんびり']
+    activities = ['運動','読書','音楽','冒険','料理','ゲーム','自然歩き','友達と遊ぶ']
     dislikes = ['虫','暗い場所','大きな音','寒さ','暑さ','水','運動','勉強']
     genders = ['男性','女性','その他']
     return all_types, all_abilities, personalities, activities, dislikes, genders

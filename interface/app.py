@@ -30,23 +30,27 @@ def index():
         result = knn_predict(user, k=3)
     # 選択肢用データ
     all_types = [
-        ('normal', 'ノーマル'), ('fire', 'ほのお'), ('water', 'みず'), ('electric', 'でんき'), ('grass', 'くさ'),
-        ('ice', 'こおり'), ('fighting', 'かくとう'), ('poison', 'どく'), ('ground', 'じめん'), ('flying', 'ひこう'),
-        ('psychic', 'エスパー'), ('bug', 'むし'), ('rock', 'いわ'), ('ghost', 'ゴースト'), ('dragon', 'ドラゴン'),
-        ('dark', 'あく'), ('steel', 'はがね'), ('fairy', 'フェアリー')
+        ('normal', 'ノーマル'), ('fire', '火'), ('water', '水'), ('electric', '電気'), ('grass', '草'),
+        ('ice', '氷'), ('fighting', '格闘'), ('poison', '毒'), ('ground', '地面'), ('flying', '空'),
+        ('psychic', '超能力'), ('bug', '虫'), ('rock', '岩'), ('ghost', 'ゴースト'), ('dragon', 'ドラゴン'),
+        ('dark', '悪'), ('steel', '鋼'), ('fairy', '妖精')
     ]
     all_abilities = [
-        ('overgrow', 'しんりょく'), ('chlorophyll', 'ようりょくそ'), ('blaze', 'もうか'), ('solar-power', 'サンパワー'),
-        ('torrent', 'げきりゅう'), ('rain-dish', 'あめうけざら'), ('shield-dust', 'りんぷん'), ('run-away', 'にげあし'),
-        ('shed-skin', 'だっぴ'), ('compound-eyes', 'ふくがん'), ('swarm', 'むしのしらせ'), ('keen-eye', 'するどいめ'),
-        ('tangled-feet', 'ちどりあし'), ('big-pecks', 'はとむね'), ('guts', 'こんじょう')
+        ('overgrow', '植物パワー'), ('chlorophyll', '太陽好き'), ('blaze', '火の力'), ('solar-power', '太陽パワー'),
+        ('torrent', '水の力'), ('rain-dish', '雨で回復'), ('shield-dust', '粉で防御'), ('run-away', '逃げ足'),
+        ('shed-skin', '皮がぬける'), ('compound-eyes', '大きな目'), ('swarm', '虫の仲間'), ('keen-eye', '良い目'),
+        ('tangled-feet', 'ふらつく'), ('big-pecks', 'がんじょう'), ('guts', '負けない心')
     ]
-    all_stats = [
-        ('hp', 'HP'), ('attack', 'こうげき'), ('defense', 'ぼうぎょ'),
-        ('special-attack', 'とくこう'), ('special-defense', 'とくぼう'), ('speed', 'すばやさ')
-    ]
-    personalities = ['おだやか','せっかち','まじめ','おっとり','やんちゃ','ずるがしこい','がんばりや','おくびょう','のんびり']
-    activities = ['スポーツ','読書','音楽','冒険','料理','ゲーム','自然散策','友達と遊ぶ']
+    all_stats = {
+        'hp': 'HP',
+        'attack': '攻撃',
+        'defense': '防御', 
+        'special-attack': '特殊攻撃',
+        'special-defense': '特殊防御',
+        'speed': 'すばやさ'
+    }
+    personalities = ['おだやか','せっかち','真面目','おっとり','やんちゃ','ずる賢い','がんばり屋','おく病','のんびり']
+    activities = ['運動','読書','音楽','冒険','料理','ゲーム','自然歩き','友達と遊ぶ']
     dislikes = ['虫','暗い場所','大きな音','寒さ','暑さ','水','運動','勉強']
     genders = ['男性','女性','その他']
     return render_template('index.html', result=result, all_types=all_types, all_abilities=all_abilities, all_stats=all_stats,

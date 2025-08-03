@@ -92,22 +92,25 @@
 <body>
 <div class="container">
     <h1>ポケモン診断アプリ</h1>
+    <p style="text-align: center; color: #666; margin-bottom: 20px; font-size: 0.9em;">
+        ⭐️ 選択はひとつでも複数でもOK！あなたの特性を自由に表現してください
+    </p>
     <form method="post">
         <label>自分に近いタイプ</label><br>
-        <select name="types" multiple>
-            {% for t, t_jp in all_types %}
-            <option value="{{ t }}">{{ t_jp }}</option>
-            {% endfor %}
-        </select>
-        <label>自分の特徴・特性</label><br>
-        <select name="abilities" multiple>
-            {% for a, a_jp in all_abilities %}
-            <option value="{{ a }}">{{ a_jp }}</option>
-            {% endfor %}
-        </select>
-        <label>重視する能力（複数選択可）</label><br>
         <div class="stat-group">
-            {% for s, s_jp in all_stats %}
+            {% for t, t_jp in all_types %}
+            <label><input type="checkbox" name="types" value="{{ t }}">{{ t_jp }}</label>
+            {% endfor %}
+        </div>
+        <label>自分の特徴・特性</label><br>
+        <div class="stat-group">
+            {% for a, a_jp in all_abilities %}
+            <label><input type="checkbox" name="abilities" value="{{ a }}">{{ a_jp }}</label>
+            {% endfor %}
+        </div>
+        <label>重視する能力</label><br>
+        <div class="stat-group">
+            {% for s, s_jp in all_stats.items() %}
             <label><input type="checkbox" name="important_stats" value="{{ s }}">{{ s_jp }}</label>
             {% endfor %}
         </div>

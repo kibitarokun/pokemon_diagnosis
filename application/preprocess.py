@@ -38,8 +38,8 @@ def main():
     pokemons = load_pokemon_dataset(dataset_path)
     all_types = get_all_types(pokemons)
     all_abilities = get_all_abilities(pokemons)
-    personalities = ['おだやか','せっかち','まじめ','おっとり','やんちゃ','ずるがしこい','がんばりや','おくびょう','のんびり']
-    activities = ['スポーツ','読書','音楽','冒険','料理','ゲーム','自然散策','友達と遊ぶ']
+    personalities = ['おだやか','せっかち','真面目','おっとり','やんちゃ','ずる賢い','がんばり屋','おく病','のんびり']
+    activities = ['運動','読書','音楽','冒険','料理','ゲーム','自然歩き','友達と遊ぶ']
     dislikes = ['虫','暗い場所','大きな音','寒さ','暑さ','水','運動','勉強']
     vectors = [vectorize_pokemon(p, all_types, all_abilities, personalities, activities, dislikes) for p in pokemons]
     # ベクトル化したデータを保存
