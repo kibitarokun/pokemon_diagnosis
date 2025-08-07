@@ -8,7 +8,7 @@ from infrastructure.pokemon_json_repository import PokemonJsonRepository
 def main():
     repo = PokemonJsonRepository("data/pokemon_dataset.json")
     usecase = AddPokemonUsecase(repo)
-    usecase.add_pokemon_by_id_range(1, 151)
+    usecase.add_pokemon_by_id_range(1, 1000)
 
 if __name__ == "__main__":
     main()

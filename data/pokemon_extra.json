@@ -1,12 +1,6002 @@
 [
-  {"name": "bulbasaur", "personality": "おだやか", "like": "日なたぼっこ", "dislike": "寒さ", "age": 5, "gender": "♂"},
-  {"name": "ivysaur", "personality": "まじめ", "like": "成長", "dislike": "暗い場所", "age": 8, "gender": "♂"},
-  {"name": "charmander", "personality": "せっかち", "like": "炎", "dislike": "水", "age": 4, "gender": "♂"},
-  {"name": "squirtle", "personality": "のんびり", "like": "水遊び", "dislike": "暑さ", "age": 6, "gender": "♂"},
-  {"name": "pikachu", "personality": "やんちゃ", "like": "木の実", "dislike": "大きな音", "age": 3, "gender": "♂"},
-  {"name": "jigglypuff", "personality": "おっとり", "like": "歌うこと", "dislike": "眠れない夜", "age": 4, "gender": "♀"},
-  {"name": "meowth", "personality": "ずるがしこい", "like": "コイン", "dislike": "犬", "age": 5, "gender": "♂"},
-  {"name": "psyduck", "personality": "ぼんやり", "like": "水辺", "dislike": "頭痛", "age": 6, "gender": "♀"},
-  {"name": "machop", "personality": "がんばりや", "like": "トレーニング", "dislike": "怠けること", "age": 7, "gender": "♂"},
-  {"name": "caterpie", "personality": "おくびょう", "like": "葉っぱ", "dislike": "鳥ポケモン", "age": 2, "gender": "♀"}
+  {
+    "name": "bulbasaur",
+    "personality": "おだやか",
+    "like": "日なたぼっこ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "ivysaur",
+    "personality": "まじめ",
+    "like": "成長",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "venusaur",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "charmander",
+    "personality": "せっかち",
+    "like": "炎",
+    "dislike": "水"
+  },
+  {
+    "name": "charmeleon",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "charizard",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "squirtle",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "wartortle",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "blastoise",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "caterpie",
+    "personality": "おくびょう",
+    "like": "葉っぱ",
+    "dislike": "鳥ポケモン"
+  },
+  {
+    "name": "metapod",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "butterfree",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "weedle",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "kakuna",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "beedrill",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "pidgey",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "pidgeotto",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "pidgeot",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "rattata",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "raticate",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "spearow",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "fearow",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "ekans",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "arbok",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "pikachu",
+    "personality": "やんちゃ",
+    "like": "木の実",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "raichu",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "sandshrew",
+    "personality": "まじめ",
+    "like": "料理",
+    "dislike": "水"
+  },
+  {
+    "name": "sandslash",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "nidoran-f",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "nidorina",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "nidoqueen",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "nidoran-m",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "nidorino",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "nidoking",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "clefairy",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "虫"
+  },
+  {
+    "name": "clefable",
+    "personality": "おっとり",
+    "like": "友達と遊ぶ",
+    "dislike": "虫"
+  },
+  {
+    "name": "vulpix",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "ninetales",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "jigglypuff",
+    "personality": "おっとり",
+    "like": "歌うこと",
+    "dislike": "眠れない夜"
+  },
+  {
+    "name": "wigglytuff",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "zubat",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "golbat",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "oddish",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "gloom",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "vileplume",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "paras",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "parasect",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "venonat",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "venomoth",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "diglett",
+    "personality": "まじめ",
+    "like": "料理",
+    "dislike": "水"
+  },
+  {
+    "name": "dugtrio",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "meowth",
+    "personality": "ずるがしこい",
+    "like": "コイン",
+    "dislike": "犬"
+  },
+  {
+    "name": "persian",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "psyduck",
+    "personality": "ぼんやり",
+    "like": "水辺",
+    "dislike": "頭痛"
+  },
+  {
+    "name": "golduck",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "mankey",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "primeape",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "growlithe",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "arcanine",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "poliwag",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "poliwhirl",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "poliwrath",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "abra",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "kadabra",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "alakazam",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "machop",
+    "personality": "がんばりや",
+    "like": "トレーニング",
+    "dislike": "怠けること"
+  },
+  {
+    "name": "machoke",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "machamp",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "bellsprout",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "weepinbell",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "victreebel",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "tentacool",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "tentacruel",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "geodude",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "graveler",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "golem",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "ponyta",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "rapidash",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "slowpoke",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "slowbro",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "magnemite",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "magneton",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "farfetchd",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "doduo",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "dodrio",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "seel",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "dewgong",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "grimer",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "muk",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "shellder",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "cloyster",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "gastly",
+    "personality": "ずるがしこい",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "haunter",
+    "personality": "おくびょう",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "gengar",
+    "personality": "ずるがしこい",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "onix",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "drowzee",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "hypno",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "krabby",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "kingler",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "voltorb",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "electrode",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "exeggcute",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "exeggutor",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "cubone",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "marowak",
+    "personality": "のんびり",
+    "like": "料理",
+    "dislike": "運動"
+  },
+  {
+    "name": "hitmonlee",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "hitmonchan",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "lickitung",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "koffing",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "weezing",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "rhyhorn",
+    "personality": "まじめ",
+    "like": "料理",
+    "dislike": "運動"
+  },
+  {
+    "name": "rhydon",
+    "personality": "のんびり",
+    "like": "料理",
+    "dislike": "運動"
+  },
+  {
+    "name": "chansey",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "tangela",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "kangaskhan",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "horsea",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "seadra",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "goldeen",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "seaking",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "staryu",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "starmie",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "mr-mime",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "scyther",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "jynx",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "electabuzz",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "magmar",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "pinsir",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "tauros",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "magikarp",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "gyarados",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "lapras",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "ditto",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "eevee",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "vaporeon",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "jolteon",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "flareon",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "porygon",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "omanyte",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "omastar",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "kabuto",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "kabutops",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "aerodactyl",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "snorlax",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "articuno",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "zapdos",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "moltres",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "dratini",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "dragonair",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "dragonite",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "mewtwo",
+    "personality": "まじめ",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "mew",
+    "personality": "まじめ",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "chikorita",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "bayleef",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "meganium",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "cyndaquil",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "quilava",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "typhlosion",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "totodile",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "croconaw",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "feraligatr",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "sentret",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "furret",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "hoothoot",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "noctowl",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "ledyba",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "ledian",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "spinarak",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "ariados",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "crobat",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "chinchou",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "lanturn",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "pichu",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "cleffa",
+    "personality": "おだやか",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "igglybuff",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "togepi",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "togetic",
+    "personality": "おだやか",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "natu",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "xatu",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "mareep",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "flaaffy",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "ampharos",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "bellossom",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "marill",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "azumarill",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "sudowoodo",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "politoed",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "hoppip",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "skiploom",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "jumpluff",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "aipom",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "sunkern",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "sunflora",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "yanma",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "wooper",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "quagsire",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "espeon",
+    "personality": "まじめ",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "umbreon",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "運動"
+  },
+  {
+    "name": "murkrow",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "slowking",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "misdreavus",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "unown",
+    "personality": "まじめ",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "wobbuffet",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "girafarig",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "pineco",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "forretress",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "dunsparce",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "gligar",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "steelix",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "snubbull",
+    "personality": "おっとり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "granbull",
+    "personality": "おだやか",
+    "like": "音楽",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "qwilfish",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "scizor",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "shuckle",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "heracross",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "sneasel",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "読書"
+  },
+  {
+    "name": "teddiursa",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "ursaring",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "slugma",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "magcargo",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "swinub",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "piloswine",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "corsola",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "remoraid",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "octillery",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "delibird",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "mantine",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "skarmory",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "houndour",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "houndoom",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "運動"
+  },
+  {
+    "name": "kingdra",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "phanpy",
+    "personality": "のんびり",
+    "like": "料理",
+    "dislike": "水"
+  },
+  {
+    "name": "donphan",
+    "personality": "まじめ",
+    "like": "料理",
+    "dislike": "水"
+  },
+  {
+    "name": "porygon2",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "stantler",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "smeargle",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "tyrogue",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "hitmontop",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "smoochum",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "elekid",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "magby",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "miltank",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "blissey",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "raikou",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "entei",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "suicune",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "larvitar",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "pupitar",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "tyranitar",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "lugia",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "ho-oh",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "celebi",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "treecko",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "grovyle",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "sceptile",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "torchic",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "combusken",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "blaziken",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "mudkip",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "marshtomp",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "swampert",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "poochyena",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "mightyena",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "読書"
+  },
+  {
+    "name": "zigzagoon",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "linoone",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "wurmple",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "silcoon",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "beautifly",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "cascoon",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "dustox",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "lotad",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "lombre",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "ludicolo",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "seedot",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "nuzleaf",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "shiftry",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "taillow",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "swellow",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "wingull",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "pelipper",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "ralts",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "kirlia",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "gardevoir",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "surskit",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "masquerain",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "shroomish",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "breloom",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "slakoth",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "vigoroth",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "slaking",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "nincada",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "ninjask",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "shedinja",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "whismur",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "loudred",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "exploud",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "makuhita",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "hariyama",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "azurill",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "nosepass",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "skitty",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "delcatty",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "sableye",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "読書"
+  },
+  {
+    "name": "mawile",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "aron",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "lairon",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "aggron",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "meditite",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "medicham",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "electrike",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "manectric",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "plusle",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "minun",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "volbeat",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "illumise",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "roselia",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "gulpin",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "swalot",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "carvanha",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "sharpedo",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "wailmer",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "wailord",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "numel",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "camerupt",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "torkoal",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "spoink",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "grumpig",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "spinda",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "trapinch",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "vibrava",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "flygon",
+    "personality": "のんびり",
+    "like": "料理",
+    "dislike": "水"
+  },
+  {
+    "name": "cacnea",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "cacturne",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "swablu",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "altaria",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "zangoose",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "seviper",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "lunatone",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "solrock",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "barboach",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "whiscash",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "corphish",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "crawdaunt",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "baltoy",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "claydol",
+    "personality": "のんびり",
+    "like": "料理",
+    "dislike": "運動"
+  },
+  {
+    "name": "lileep",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "cradily",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "anorith",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "armaldo",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "feebas",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "milotic",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "castform",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "kecleon",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "shuppet",
+    "personality": "おくびょう",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "banette",
+    "personality": "おくびょう",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "duskull",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "運動"
+  },
+  {
+    "name": "dusclops",
+    "personality": "ずるがしこい",
+    "like": "音楽",
+    "dislike": "運動"
+  },
+  {
+    "name": "tropius",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "chimecho",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "absol",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "wynaut",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "snorunt",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "glalie",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "spheal",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "sealeo",
+    "personality": "おくびょう",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "walrein",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "clamperl",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "huntail",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "gorebyss",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "relicanth",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "luvdisc",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "bagon",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "shelgon",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "salamence",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "beldum",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "metang",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "metagross",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "regirock",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "regice",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "registeel",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "latias",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "latios",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "kyogre",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "groudon",
+    "personality": "のんびり",
+    "like": "料理",
+    "dislike": "水"
+  },
+  {
+    "name": "rayquaza",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "jirachi",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "deoxys-normal",
+    "personality": "まじめ",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "turtwig",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "grotle",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "torterra",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "chimchar",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "monferno",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "infernape",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "piplup",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "prinplup",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "empoleon",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "starly",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "staravia",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "staraptor",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "bidoof",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "bibarel",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "kricketot",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "kricketune",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "shinx",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "luxio",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "luxray",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "budew",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "roserade",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "cranidos",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "rampardos",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "shieldon",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "bastiodon",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "burmy",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "wormadam-plant",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "mothim",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "combee",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "vespiquen",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "pachirisu",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "buizel",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "floatzel",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "cherubi",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "cherrim",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "shellos",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "gastrodon",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "ambipom",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "drifloon",
+    "personality": "おくびょう",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "drifblim",
+    "personality": "ずるがしこい",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "buneary",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "lopunny",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "mismagius",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "honchkrow",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "glameow",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "purugly",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "chingling",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "stunky",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "skuntank",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "bronzor",
+    "personality": "がんばりや",
+    "like": "読書",
+    "dislike": "水"
+  },
+  {
+    "name": "bronzong",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "水"
+  },
+  {
+    "name": "bonsly",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "mime-jr",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "happiny",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "chatot",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "spiritomb",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "gible",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "gabite",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "garchomp",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "munchlax",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "riolu",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "lucario",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "hippopotas",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "運動"
+  },
+  {
+    "name": "hippowdon",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "運動"
+  },
+  {
+    "name": "skorupi",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "drapion",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "croagunk",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "toxicroak",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "carnivine",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "finneon",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "lumineon",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "mantyke",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "snover",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "abomasnow",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "weavile",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "magnezone",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "lickilicky",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "rhyperior",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "運動"
+  },
+  {
+    "name": "tangrowth",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "electivire",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "magmortar",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "togekiss",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "yanmega",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "leafeon",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "glaceon",
+    "personality": "おくびょう",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "gliscor",
+    "personality": "のんびり",
+    "like": "料理",
+    "dislike": "運動"
+  },
+  {
+    "name": "mamoswine",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "porygon-z",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "gallade",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "probopass",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "dusknoir",
+    "personality": "おくびょう",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "froslass",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "rotom",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "uxie",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "mesprit",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "azelf",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "dialga",
+    "personality": "がんばりや",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "palkia",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "heatran",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "regigigas",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "giratina-altered",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "cresselia",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "phione",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "manaphy",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "darkrai",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "運動"
+  },
+  {
+    "name": "shaymin-land",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "arceus",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "victini",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "snivy",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "servine",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "serperior",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "tepig",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "pignite",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "emboar",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "oshawott",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "dewott",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "samurott",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "patrat",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "watchog",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "lillipup",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "herdier",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "stoutland",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "purrloin",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "liepard",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "運動"
+  },
+  {
+    "name": "pansage",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "simisage",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "pansear",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "simisear",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "panpour",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "simipour",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "munna",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "musharna",
+    "personality": "まじめ",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "pidove",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "tranquill",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "unfezant",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "blitzle",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "zebstrika",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "roggenrola",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "boldore",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "gigalith",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "woobat",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "swoobat",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "drilbur",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "excadrill",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "audino",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "timburr",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "gurdurr",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "conkeldurr",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "tympole",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "palpitoad",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "seismitoad",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "throh",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "sawk",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "sewaddle",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "swadloon",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "leavanny",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "venipede",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "whirlipede",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "scolipede",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "cottonee",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "whimsicott",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "petilil",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "lilligant",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "basculin-red-striped",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "sandile",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "krokorok",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "運動"
+  },
+  {
+    "name": "krookodile",
+    "personality": "のんびり",
+    "like": "料理",
+    "dislike": "水"
+  },
+  {
+    "name": "darumaka",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "darmanitan-standard",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "maractus",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "dwebble",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "crustle",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "scraggy",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "scrafty",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "運動"
+  },
+  {
+    "name": "sigilyph",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "yamask",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "cofagrigus",
+    "personality": "ずるがしこい",
+    "like": "音楽",
+    "dislike": "運動"
+  },
+  {
+    "name": "tirtouga",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "carracosta",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "archen",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "archeops",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "trubbish",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "garbodor",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "zorua",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "zoroark",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "運動"
+  },
+  {
+    "name": "minccino",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "cinccino",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "gothita",
+    "personality": "まじめ",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "gothorita",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "gothitelle",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "solosis",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "duosion",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "reuniclus",
+    "personality": "まじめ",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "ducklett",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "swanna",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "vanillite",
+    "personality": "おくびょう",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "vanillish",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "vanilluxe",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "deerling",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "sawsbuck",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "emolga",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "karrablast",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "escavalier",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "foongus",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "amoonguss",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "frillish",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "jellicent",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "alomomola",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "joltik",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "galvantula",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "ferroseed",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "ferrothorn",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "klink",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "klang",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "klinklang",
+    "personality": "がんばりや",
+    "like": "読書",
+    "dislike": "水"
+  },
+  {
+    "name": "tynamo",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "eelektrik",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "eelektross",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "elgyem",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "beheeyem",
+    "personality": "まじめ",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "litwick",
+    "personality": "おくびょう",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "lampent",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "運動"
+  },
+  {
+    "name": "chandelure",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "運動"
+  },
+  {
+    "name": "axew",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "fraxure",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "haxorus",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "cubchoo",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "beartic",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "cryogonal",
+    "personality": "おくびょう",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "shelmet",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "accelgor",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "stunfisk",
+    "personality": "まじめ",
+    "like": "料理",
+    "dislike": "運動"
+  },
+  {
+    "name": "mienfoo",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "mienshao",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "druddigon",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "golett",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "運動"
+  },
+  {
+    "name": "golurk",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "pawniard",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "運動"
+  },
+  {
+    "name": "bisharp",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "bouffalant",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "rufflet",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "braviary",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "vullaby",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "mandibuzz",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "読書"
+  },
+  {
+    "name": "heatmor",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "durant",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "deino",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "zweilous",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "運動"
+  },
+  {
+    "name": "hydreigon",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "larvesta",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "volcarona",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "cobalion",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "terrakion",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "virizion",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "tornadus-incarnate",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "thundurus-incarnate",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "reshiram",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "zekrom",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "landorus-incarnate",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "kyurem",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "keldeo-ordinary",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "meloetta-aria",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "genesect",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "chespin",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "quilladin",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "chesnaught",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "fennekin",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "braixen",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "delphox",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "froakie",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "frogadier",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "greninja",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "bunnelby",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "diggersby",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "fletchling",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "fletchinder",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "talonflame",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "scatterbug",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "spewpa",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "vivillon",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "litleo",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "pyroar",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "flabebe",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "虫"
+  },
+  {
+    "name": "floette",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "florges",
+    "personality": "おっとり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "skiddo",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "gogoat",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "pancham",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "pangoro",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "furfrou",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "espurr",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "meowstic-male",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "honedge",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "水"
+  },
+  {
+    "name": "doublade",
+    "personality": "がんばりや",
+    "like": "読書",
+    "dislike": "水"
+  },
+  {
+    "name": "aegislash-shield",
+    "personality": "がんばりや",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "spritzee",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "虫"
+  },
+  {
+    "name": "aromatisse",
+    "personality": "おっとり",
+    "like": "友達と遊ぶ",
+    "dislike": "虫"
+  },
+  {
+    "name": "swirlix",
+    "personality": "おっとり",
+    "like": "友達と遊ぶ",
+    "dislike": "虫"
+  },
+  {
+    "name": "slurpuff",
+    "personality": "おだやか",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "inkay",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "malamar",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "読書"
+  },
+  {
+    "name": "binacle",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "barbaracle",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "skrelp",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "dragalge",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "clauncher",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "clawitzer",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "helioptile",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "heliolisk",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "tyrunt",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "tyrantrum",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "amaura",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "aurorus",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "sylveon",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "hawlucha",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "dedenne",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "carbink",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "goomy",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "sliggoo",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "goodra",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "klefki",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "phantump",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "運動"
+  },
+  {
+    "name": "trevenant",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "運動"
+  },
+  {
+    "name": "pumpkaboo-average",
+    "personality": "ずるがしこい",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "gourgeist-average",
+    "personality": "ずるがしこい",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "bergmite",
+    "personality": "おっとり",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "avalugg",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "noibat",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "noivern",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "xerneas",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "yveltal",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "読書"
+  },
+  {
+    "name": "zygarde-50",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "diancie",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "hoopa",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "volcanion",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "rowlet",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "dartrix",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "decidueye",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "litten",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "torracat",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "incineroar",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "popplio",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "brionne",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "primarina",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "pikipek",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "trumbeak",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "toucannon",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "yungoos",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "gumshoos",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "grubbin",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "charjabug",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "vikavolt",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "crabrawler",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "crabominable",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "oricorio-baile",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "cutiefly",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "ribombee",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "rockruff",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "lycanroc-midday",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "wishiwashi-solo",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "mareanie",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "toxapex",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "mudbray",
+    "personality": "のんびり",
+    "like": "料理",
+    "dislike": "水"
+  },
+  {
+    "name": "mudsdale",
+    "personality": "まじめ",
+    "like": "料理",
+    "dislike": "水"
+  },
+  {
+    "name": "dewpider",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "araquanid",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "fomantis",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "lurantis",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "morelull",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "shiinotic",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "salandit",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "salazzle",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "stufful",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "bewear",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "bounsweet",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "steenee",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "tsareena",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "comfey",
+    "personality": "おだやか",
+    "like": "音楽",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "oranguru",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "passimian",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "wimpod",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "golisopod",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "sandygast",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "運動"
+  },
+  {
+    "name": "palossand",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "pyukumuku",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "type-null",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "silvally",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "minior-red-meteor",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "komala",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "turtonator",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "togedemaru",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "mimikyu-disguised",
+    "personality": "ずるがしこい",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "bruxish",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "drampa",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "dhelmise",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "運動"
+  },
+  {
+    "name": "jangmo-o",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "hakamo-o",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "kommo-o",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "tapu-koko",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "tapu-lele",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "tapu-bulu",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "tapu-fini",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "cosmog",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "cosmoem",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "solgaleo",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "lunala",
+    "personality": "まじめ",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "nihilego",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "buzzwole",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "pheromosa",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "xurkitree",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "celesteela",
+    "personality": "がんばりや",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "kartana",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "guzzlord",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "運動"
+  },
+  {
+    "name": "necrozma",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "magearna",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "marshadow",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "poipole",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "naganadel",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "stakataka",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "blacephalon",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "zeraora",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "meltan",
+    "personality": "がんばりや",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "melmetal",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "grookey",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "thwackey",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "rillaboom",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "scorbunny",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "raboot",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "cinderace",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "sobble",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "drizzile",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "inteleon",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "skwovet",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "greedent",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "rookidee",
+    "personality": "せっかち",
+    "like": "音楽",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "corvisquire",
+    "personality": "やんちゃ",
+    "like": "音楽",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "corviknight",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "blipbug",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "dottler",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "orbeetle",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "nickit",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "thievul",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "gossifleur",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "eldegoss",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "wooloo",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "dubwool",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "chewtle",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "drednaw",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "yamper",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "boltund",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "rolycoly",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "carkol",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "coalossal",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "applin",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "flapple",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "appletun",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "silicobra",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "運動"
+  },
+  {
+    "name": "sandaconda",
+    "personality": "のんびり",
+    "like": "料理",
+    "dislike": "水"
+  },
+  {
+    "name": "cramorant",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "arrokuda",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "barraskewda",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "toxel",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "toxtricity-amped",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "sizzlipede",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "centiskorch",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "clobbopus",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "grapploct",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "sinistea",
+    "personality": "おくびょう",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "polteageist",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "hatenna",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "hattrem",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "hatterene",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "impidimp",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "読書"
+  },
+  {
+    "name": "morgrem",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "grimmsnarl",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "obstagoon",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "perrserker",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "cursola",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "sirfetchd",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "mr-rime",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "runerigus",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "運動"
+  },
+  {
+    "name": "milcery",
+    "personality": "おっとり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "alcremie",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "falinks",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "pincurchin",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "snom",
+    "personality": "おっとり",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "frosmoth",
+    "personality": "おっとり",
+    "like": "料理",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "stonjourner",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "eiscue-ice",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "indeedee-male",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "morpeko-full-belly",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "cufant",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "copperajah",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "dracozolt",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "arctozolt",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "dracovish",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "arctovish",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "duraludon",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "dreepy",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "drakloak",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "dragapult",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "zacian",
+    "personality": "おっとり",
+    "like": "友達と遊ぶ",
+    "dislike": "虫"
+  },
+  {
+    "name": "zamazenta",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "eternatus",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "kubfu",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "urshifu-single-strike",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "zarude",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "運動"
+  },
+  {
+    "name": "regieleki",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "regidrago",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "glastrier",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "spectrier",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "calyrex",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "wyrdeer",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "kleavor",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "ursaluna",
+    "personality": "まじめ",
+    "like": "料理",
+    "dislike": "運動"
+  },
+  {
+    "name": "basculegion-male",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "sneasler",
+    "personality": "がんばりや",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "overqwil",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "読書"
+  },
+  {
+    "name": "enamorus-incarnate",
+    "personality": "おっとり",
+    "like": "音楽",
+    "dislike": "虫"
+  },
+  {
+    "name": "sprigatito",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "floragato",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "meowscarada",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "fuecoco",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "crocalor",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "skeledirge",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "quaxly",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "quaxwell",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "quaquaval",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "lechonk",
+    "personality": "のんびり",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "oinkologne-male",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "tarountula",
+    "personality": "せっかち",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "spidops",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "nymble",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "lokix",
+    "personality": "おくびょう",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "pawmi",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "pawmo",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "勉強"
+  },
+  {
+    "name": "pawmot",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "tandemaus",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "maushold-family-of-four",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "fidough",
+    "personality": "おだやか",
+    "like": "音楽",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "dachsbun",
+    "personality": "おっとり",
+    "like": "友達と遊ぶ",
+    "dislike": "虫"
+  },
+  {
+    "name": "smoliv",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "dolliv",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "arboliva",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "squawkabilly-green-plumage",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "nacli",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "naclstack",
+    "personality": "まじめ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "garganacl",
+    "personality": "がんばりや",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "charcadet",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "armarouge",
+    "personality": "せっかち",
+    "like": "運動",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "ceruledge",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "tadbulb",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "bellibolt",
+    "personality": "せっかち",
+    "like": "冒険",
+    "dislike": "水"
+  },
+  {
+    "name": "wattrel",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "kilowattrel",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "maschiff",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "mabosstiff",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "読書"
+  },
+  {
+    "name": "shroodle",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "grafaiai",
+    "personality": "ずるがしこい",
+    "like": "ゲーム",
+    "dislike": "勉強"
+  },
+  {
+    "name": "bramblin",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "brambleghast",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "toedscool",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "toedscruel",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "運動"
+  },
+  {
+    "name": "klawf",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "capsakid",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "scovillain",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "rellor",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "rabsca",
+    "personality": "せっかち",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "flittle",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "espathra",
+    "personality": "まじめ",
+    "like": "音楽",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "tinkatink",
+    "personality": "おだやか",
+    "like": "音楽",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "tinkatuff",
+    "personality": "おだやか",
+    "like": "音楽",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "tinkaton",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "wiglett",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "wugtrio",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "bombirdier",
+    "personality": "せっかち",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "finizen",
+    "personality": "おだやか",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "palafin-zero",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "varoom",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "revavroom",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "cyclizar",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "orthworm",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "glimmet",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "glimmora",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "水"
+  },
+  {
+    "name": "greavard",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "勉強"
+  },
+  {
+    "name": "houndstone",
+    "personality": "おくびょう",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "flamigo",
+    "personality": "やんちゃ",
+    "like": "音楽",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "cetoddle",
+    "personality": "おくびょう",
+    "like": "読書",
+    "dislike": "暑さ"
+  },
+  {
+    "name": "cetitan",
+    "personality": "おっとり",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "veluza",
+    "personality": "のんびり",
+    "like": "水遊び",
+    "dislike": "虫"
+  },
+  {
+    "name": "dondozo",
+    "personality": "のんびり",
+    "like": "自然歩き",
+    "dislike": "虫"
+  },
+  {
+    "name": "tatsugiri-curly",
+    "personality": "やんちゃ",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "annihilape",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "読書"
+  },
+  {
+    "name": "clodsire",
+    "personality": "ずるがしこい",
+    "like": "冒険",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "farigiraf",
+    "personality": "おだやか",
+    "like": "友達と遊ぶ",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "dudunsparce-two-segment",
+    "personality": "おだやか",
+    "like": "自然歩き",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "kingambit",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "great-tusk",
+    "personality": "のんびり",
+    "like": "料理",
+    "dislike": "運動"
+  },
+  {
+    "name": "scream-tail",
+    "personality": "おっとり",
+    "like": "友達と遊ぶ",
+    "dislike": "暗い場所"
+  },
+  {
+    "name": "brute-bonnet",
+    "personality": "おだやか",
+    "like": "読書",
+    "dislike": "虫"
+  },
+  {
+    "name": "flutter-mane",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "運動"
+  },
+  {
+    "name": "slither-wing",
+    "personality": "おくびょう",
+    "like": "友達と遊ぶ",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "sandy-shocks",
+    "personality": "せっかち",
+    "like": "ゲーム",
+    "dislike": "水"
+  },
+  {
+    "name": "iron-treads",
+    "personality": "まじめ",
+    "like": "料理",
+    "dislike": "運動"
+  },
+  {
+    "name": "iron-bundle",
+    "personality": "おくびょう",
+    "like": "料理",
+    "dislike": "虫"
+  },
+  {
+    "name": "iron-hands",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "勉強"
+  },
+  {
+    "name": "iron-jugulis",
+    "personality": "やんちゃ",
+    "like": "ゲーム",
+    "dislike": "運動"
+  },
+  {
+    "name": "iron-moth",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "寒さ"
+  },
+  {
+    "name": "iron-thorns",
+    "personality": "まじめ",
+    "like": "自然歩き",
+    "dislike": "水"
+  },
+  {
+    "name": "frigibax",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "arctibax",
+    "personality": "やんちゃ",
+    "like": "冒険",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "baxcalibur",
+    "personality": "がんばりや",
+    "like": "運動",
+    "dislike": "大きな音"
+  },
+  {
+    "name": "gimmighoul",
+    "personality": "おくびょう",
+    "like": "音楽",
+    "dislike": "運動"
+  },
+  {
+    "name": "gholdengo",
+    "personality": "まじめ",
+    "like": "読書",
+    "dislike": "暑さ"
+  }
 ]

@@ -17,6 +17,69 @@ def load_pokemon_dataset() -> List[Dict]:
     with open(dataset_path, encoding='utf-8') as f:
         return json.load(f)
 
+def get_chart_data(user_vec, pokemon_vec, all_types, all_abilities, personalities, activities, dislikes):
+    """ユーザーとポケモンのベクトルからチャートデータを生成"""
+    # ベクトルからカテゴリごとのマッチ度を計算
+    len_types = len(all_types)
+    len_abilities = len(all_abilities)
+    len_stats = 6  # hp, attack, defense, special-attack, special-defense, speed
+    len_personality = len(personalities)
+    len_activities = len(activities)
+    len_dislikes = len(dislikes)
+    
+    # カテゴリごとにスライス
+    user_types = user_vec[:len_types]
+    user_abilities = user_vec[len_types:len_types+len_abilities]
+    user_stats = user_vec[len_types+len_abilities:len_types+len_abilities+len_stats]
+    user_personality = user_vec[len_types+len_abilities+len_stats:len_types+len_abilities+len_stats+len_personality]
+    user_activities = user_vec[len_types+len_abilities+len_stats+len_personality:len_types+len_abilities+len_stats+len_personality+len_activities]
+    user_dislikes = user_vec[len_types+len_abilities+len_stats+len_personality+len_activities:]
+    
+    pokemon_types = pokemon_vec[:len_types]
+    pokemon_abilities = pokemon_vec[len_types:len_types+len_abilities]
+    pokemon_stats = pokemon_vec[len_types+len_abilities:len_types+len_abilities+len_stats]
+    pokemon_personality = pokemon_vec[len_types+len_abilities+len_stats:len_types+len_abilities+len_stats+len_personality]
+    pokemon_activities = pokemon_vec[len_types+len_abilities+len_stats+len_personality:len_types+len_abilities+len_stats+len_personality+len_activities]
+    pokemon_dislikes = pokemon_vec[len_types+len_abilities+len_stats+len_personality+len_activities:]
+    
+    # カテゴリごとのマッチ度を計算（ユークリッド距離の類似度）
+    # ※値が0のカテゴリは計算から除外
+    def calc_match_score(user_cat, poke_cat):
+        if np.sum(user_cat) == 0 or np.sum(poke_cat) == 0:
+            return 0  # 選択なしの場合は0を返す
+        sim = 1 - (np.linalg.norm(user_cat - poke_cat) / np.sqrt(len(user_cat)))
+        return max(0, sim)  # 負の値は0にする
+    
+    # カテゴリごとのマッチスコアを計算
+    type_match = calc_match_score(user_types, pokemon_types) * 100
+    ability_match = calc_match_score(user_abilities, pokemon_abilities) * 100
+    stat_match = calc_match_score(user_stats, pokemon_stats) * 100
+    personality_match = calc_match_score(user_personality, pokemon_personality) * 100
+    activity_match = calc_match_score(user_activities, pokemon_activities) * 100
+    dislike_match = calc_match_score(user_dislikes, pokemon_dislikes) * 100
+    
+    # チャート用のデータを作成
+    chart_data = {
+        'labels': ['タイプ', '特性', '能力値', '性格', '好きなこと', '苦手なこと'],
+        'user_data': [
+            int(np.sum(user_types) > 0) * 100,  # 選択あり:100, なし:0
+            int(np.sum(user_abilities) > 0) * 100,
+            int(np.sum(user_stats) > 0) * 100,
+            int(np.sum(user_personality) > 0) * 100,
+            int(np.sum(user_activities) > 0) * 100,
+            int(np.sum(user_dislikes) > 0) * 100
+        ],
+        'pokemon_data': [
+            type_match,
+            ability_match,
+            stat_match,
+            personality_match,
+            activity_match,
+            dislike_match
+        ]
+    }
+    return chart_data
+
 def knn_predict(user: UserProfile, k=1):
     all_types, all_abilities, personalities, activities, dislikes = load_metadata()
     user_vec = vectorize_user_profile(user, all_types, all_abilities, personalities, activities, dislikes)
@@ -36,6 +99,8 @@ def knn_predict(user: UserProfile, k=1):
         match_percent = int(score * 100)
         p = pokemons[i].copy() if isinstance(pokemons[i], dict) else pokemons[i].__dict__.copy()
         p['match_percent'] = match_percent
+        # チャートデータを追加
+        p['chart_data'] = get_chart_data(user_vec, pokemon_vecs[i], all_types, all_abilities, personalities, activities, dislikes)
         return p
     return {
         'best': make_result(best_idx),
