@@ -231,15 +231,10 @@
                 const p = pokeData[idx];
                 let html = `<div style='text-align:center;'>`;
                 html += `<img src='${p.image_url}' alt='${p.name}' style='width:120px;height:120px;margin-bottom:8px;'>`;
-                html += `<div style='font-weight:bold;font-size:1.2em;color:#ffb347;'>${p.name.charAt(0).toUpperCase() + p.name.slice(1)}</div>`;
+                html += `<div style='font-weight:bold;font-size:1.2em;color:#ffb347;'>${p.name_ja || (p.name.charAt(0).toUpperCase() + p.name.slice(1))}</div>`;
                 html += `<div style='color:#888;'>タイプ: ${p.types.join(', ')}</div>`;
                 html += `<div style='color:#888;'>特性: ${p.abilities.join(', ')}</div>`;
                 html += `<div style='margin-top:8px;'>`;
-                html += `<table style='margin:0 auto;font-size:0.95em;'>`;
-                for (const [k, v] of Object.entries(p.stats)) {
-                    html += `<tr><td style='color:#ffb347;padding-right:8px;'>${k.replace('-', ' ').replace('special', '特').replace('attack', '攻').replace('defense', '防').replace('hp', 'HP').replace('speed', 'すばやさ')}</td><td>${v}</td></tr>`;
-                }
-                html += `</table></div>`;
                 if (p.flavor_text) {
                     html += `<div style='margin-top:12px;text-align:left;font-size:0.98em;background:#fffbe7;border-radius:8px;padding:8px 10px;'>`;
                     html += `<b>特徴:</b><br>${p.flavor_text}`;
