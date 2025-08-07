@@ -17,17 +17,31 @@ def load_pokemon_dataset() -> List[Dict]:
     with open(dataset_path, encoding='utf-8') as f:
         return json.load(f)
 
-def get_chart_data(user_vec, pokemon_vec, all_types, all_abilities, personalities, activities, dislikes):
-    """ユーザーとポケモンのベクトルからチャートデータを生成"""
-    # ベクトルからカテゴリごとのマッチ度を計算
-    len_types = len(all_types)
-    len_abilities = len(all_abilities)
-    len_stats = 6  # hp, attack, defense, special-attack, special-defense, speed
-    len_personality = len(personalities)
-    len_activities = len(activities)
-    len_dislikes = len(dislikes)
-    
-    # カテゴリごとにスライス
+def knn_predict(user: UserProfile, k=1):
+    all_types, all_abilities, personalities, activities, dislikes = load_metadata()
+    user_vec = vectorize_user_profile(user, all_types, all_abilities, personalities, activities, dislikes)
+    pokemon_vecs = load_pokemon_vectors()
+    pokemons = load_pokemon_dataset()
+    # 距離計算（ユーザー入力と各ポケモンのベクトル）
+    dists = np.linalg.norm(pokemon_vecs - user_vec, axis=1)
+    sorted_idxs = np.argsort(dists)
+    # 仲良し: 2番目に近い, 天敵: 一番遠い
+    best_idx = sorted_idxs[0]
+    friend_idx = sorted_idxs[1] if len(sorted_idxs) > 1 else sorted_idxs[0]
+    enemy_idx = sorted_idxs[-1]
+    max_dist = np.max(dists) if np.max(dists) > 0 else 1
+    min_dist = np.min(dists)
+    def make_result(i):
+        score = 1 - (dists[i] - min_dist) / (max_dist - min_dist) if max_dist != min_dist else 1.0
+        match_percent = int(score * 100)
+        p = pokemons[i].copy() if isinstance(pokemons[i], dict) else pokemons[i].__dict__.copy()
+        p['match_percent'] = match_percent
+        return p
+    return {
+        'best': make_result(best_idx),
+        'friend': make_result(friend_idx),
+        'enemy': make_result(enemy_idx)
+    }
     user_types = user_vec[:len_types]
     user_abilities = user_vec[len_types:len_types+len_abilities]
     user_stats = user_vec[len_types+len_abilities:len_types+len_abilities+len_stats]
@@ -99,8 +113,6 @@ def knn_predict(user: UserProfile, k=1):
         match_percent = int(score * 100)
         p = pokemons[i].copy() if isinstance(pokemons[i], dict) else pokemons[i].__dict__.copy()
         p['match_percent'] = match_percent
-        # チャートデータを追加
-        p['chart_data'] = get_chart_data(user_vec, pokemon_vecs[i], all_types, all_abilities, personalities, activities, dislikes)
         return p
     return {
         'best': make_result(best_idx),

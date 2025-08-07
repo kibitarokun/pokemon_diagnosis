@@ -14,7 +14,7 @@ application/
     add_pokemon_usecase.py    # Use case for adding Pokémon data from API
 
 data/
-    pokemon_dataset.json      # Core dataset of Pokémon (ID1-151 supported)
+    pokemon_dataset.json      # Core dataset of Pokémon (ID1-1000 supported)
     pokemon_extra.json        # Additional Pokémon data (personality, likes, etc.)
     pokemon_vectors.npy       # Preprocessed Pokémon vectors
 
@@ -35,7 +35,7 @@ interface/
     templates/                # HTML templates for the web interface
 
 tools/
-    add_pokemon_1_151.py      # Script to auto-add Pokémon ID1-151 from API
+    add_pokemon_1_151.py      # Script to auto-add Pokémon ID1-1000 from API
 ```
 
 ## Features
@@ -43,7 +43,7 @@ tools/
 - **Machine Learning**: Uses KNN for accurate predictions.
 - **API Integration**: Fetches and extends data from external Pokémon APIs (pokeAPI).
 - **DDD Structure**: Domain-driven design for clear separation of concerns.
-- **Data Auto-Expansion**: Easily expand dataset up to ID151 with provided scripts.
+- **Data Auto-Expansion**: Easily expand dataset up to ID1000 with provided scripts.
 - **Web Interface**: User-friendly web interface for interaction.
 
 ## Installation
@@ -56,24 +56,60 @@ tools/
 
 2. Set up a Python virtual environment and install dependencies:
    ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
+   python3 -m venv .venv-1
+   source .venv-1/bin/activate  # macOS/Linux
+   # or
+   .venv-1\Scripts\activate     # Windows
    pip install -r requirements.txt
    ```
 
-3. (Optional) Auto-expand Pokémon data to ID151:
+3. (Optional) Auto-expand Pokémon data to ID1000:
    ```bash
-   .venv/bin/python tools/add_pokemon_1_151.py
+   .venv-1/bin/python tools/add_pokemon_1_151.py
+   .venv-1/bin/python application/preprocess.py  # Regenerate vector data
    ```
 
 4. Run the application:
    ```bash
-   .venv/bin/python interface/app.py
+   .venv-1/bin/python interface/app.py
    ```
 
 ## Usage
-- Open your browser and navigate to `http://localhost:5000`.
+- Open your browser and navigate to `http://localhost:5001`.
 - Follow the instructions on the web interface to input your preferences and get Pokémon predictions.
+
+## Development Environment
+
+1. **First time only**: Create virtual environment and install packages
+   ```bash
+   python3 -m venv .venv-1
+   source .venv-1/bin/activate  # macOS/Linux
+   # or
+   .venv-1\Scripts\activate     # Windows
+   pip install -r requirements.txt
+   ```
+
+2. **Subsequent use**: Only activate the virtual environment
+   ```bash
+   source .venv-1/bin/activate  # macOS/Linux
+   # or
+   .venv-1\Scripts\activate     # Windows
+   ```
+
+3. **Start the application**:
+   ```bash
+   .venv-1/bin/python interface/app.py
+   ```
+
+4. **Using the API**:
+   ```bash
+   curl -X POST -H "Content-Type: application/json" -d '{"types":["fire"], "personality":"おだやか"}' http://localhost:5001/diagnose
+   ```
+
+## Virtual Environment Notes
+- Packages in the virtual environment are stored in the `.venv-1` folder and persisted between computer restarts
+- Reinstalling packages is only necessary if you delete and recreate the virtual environment or update `requirements.txt`
+- Activating the virtual environment is required each time you open a new terminal session
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.

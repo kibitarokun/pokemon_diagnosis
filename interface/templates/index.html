@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <title>ポケモン診断アプリ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family                html += `<div style='text-align:center;'>`;
+                html += `<img src='${p.image_url}' alt='${p.name}' style='width:120px;height:120px;margin-bottom:8px;'>`;
+                html += `<div style='font-weight:bold;font-size:1.2em;color:#ffb347;'>${p.name_ja || (p.name.charAt(0).toUpperCase() + p.name.slice(1))}</div>`;
+                html += `<div style='color:#888;'>タイプ: ${p.types.join(', ')}</div>`;
+                html += `<div style='color:#888;'>特性: ${p.abilities.join(', ')}</div>`;
+                html += `<div style='margin-top:8px;'>`;
+                html += `<table style='margin:0 auto;font-size:0.95em;'>`;+Maru&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
@@ -144,35 +150,48 @@
         <h2>あなたに近いポケモン</h2>
         <div class="poke-card" style="cursor:pointer;" data-idx="0">
             <img src="{{ result.best.image_url }}" alt="{{ result.best.name }}">
-            <div class="name">{{ result.best.name|capitalize }}</div>
+            <div class="name">{{ result.best.name_ja if result.best.name_ja else result.best.name|capitalize }}</div>
             <div class="types">{{ result.best.types|join(', ') }}</div>
             <div style="color:#ffb347;font-size:0.98em;margin-top:4px;">マッチ度: {{ result.best.match_percent }}%</div>
         </div>
         <h3 style="margin-top:24px;color:#7ec850;">仲良しポケモン</h3>
         <div class="poke-card" style="cursor:pointer;" data-idx="1">
             <img src="{{ result.friend.image_url }}" alt="{{ result.friend.name }}">
-            <div class="name">{{ result.friend.name|capitalize }}</div>
+            <div class="name">{{ result.friend.name_ja if result.friend.name_ja else result.friend.name|capitalize }}</div>
             <div class="types">{{ result.friend.types|join(', ') }}</div>
             <div style="color:#7ec850;font-size:0.98em;margin-top:4px;">仲良し度: {{ result.friend.match_percent }}%</div>
         </div>
         <h3 style="margin-top:24px;color:#e57373;">天敵ポケモン</h3>
         <div class="poke-card" style="cursor:pointer;" data-idx="2">
             <img src="{{ result.enemy.image_url }}" alt="{{ result.enemy.name }}">
-            <div class="name">{{ result.enemy.name|capitalize }}</div>
+            <div class="name">{{ result.enemy.name_ja if result.enemy.name_ja else result.enemy.name|capitalize }}</div>
             <div class="types">{{ result.enemy.types|join(', ') }}</div>
             <div style="color:#e57373;font-size:0.98em;margin-top:4px;">天敵度: {{ result.enemy.match_percent }}%</div>
         </div>
         <!-- モーダルウィンドウ -->
         <div id="modal-bg" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.3);z-index:1000;">
-            <div id="modal" style="background:#fffbe7;border-radius:16px;max-width:340px;margin:60px auto 0 auto;padding:24px 18px;box-shadow:0 4px 24px #e0d9b5;position:relative;">
+            <div id="modal" style="background:#fffbe7;border-radius:16px;max-width:340px;margin:60px auto 0 auto;padding:24px 18px;box-shadow:0 4px 24px #e0d9b5;position:relative;max-height:80vh;overflow-y:auto;">
                 <span id="modal-close" style="position:absolute;top:8px;right:16px;font-size:1.5em;cursor:pointer;color:#ffb347;">&times;</span>
                 <div id="modal-content"></div>
+                <!-- レーダーチャート用のキャンバス -->
+                <div style="margin-top:20px;text-align:center;">
+                    <h4 style="color:#ffb347;margin-bottom:10px;">マッチング詳細</h4>
+                    <p style="font-size:0.9em;color:#666;margin-bottom:10px;">
+                        あなたとポケモンの特性を比較したグラフです。値が近いほどマッチ度が高いことを示しています。
+                    </p>
+                    <canvas id="radarChart" width="280" height="280"></canvas>
+                </div>
             </div>
         </div>
         <script>
         window.addEventListener('DOMContentLoaded', function() {
             // best, friend, enemyを配列化してインデックスでアクセスできるようにする
             const pokeData = JSON.parse('{{ [result.best, result.friend, result.enemy]|tojson }}');
+            // ユーザープロファイルのデータ
+            const userProfile = JSON.parse('{{ user_profile|tojson if user_profile else "{}" }}');
+            // レーダーチャートインスタンス
+            let radarChart = null;
+            
             // 独自データをfetchで取得
             let pokeExtra = {};
             fetch('/static/pokemon_extra.json')
@@ -180,18 +199,34 @@
                 .then(arr => {
                     arr.forEach(e => { pokeExtra[e.name] = e; });
                 });
+                
             document.querySelectorAll('.poke-card').forEach(function(card) {
                 card.addEventListener('click', function() {
                     const idx = this.getAttribute('data-idx');
                     showModal(idx);
                 });
             });
+            
             document.getElementById('modal-close').onclick = function() {
                 document.getElementById('modal-bg').style.display = 'none';
+                // チャートを破棄
+                if (radarChart) {
+                    radarChart.destroy();
+                    radarChart = null;
+                }
             };
+            
             document.getElementById('modal-bg').onclick = function(e) {
-                if (e.target === this) this.style.display = 'none';
+                if (e.target === this) {
+                    this.style.display = 'none';
+                    // チャートを破棄
+                    if (radarChart) {
+                        radarChart.destroy();
+                        radarChart = null;
+                    }
+                }
             };
+            
             function showModal(idx) {
                 const p = pokeData[idx];
                 let html = `<div style='text-align:center;'>`;
@@ -222,7 +257,169 @@
                 html += `</div>`;
                 document.getElementById('modal-content').innerHTML = html;
                 document.getElementById('modal-bg').style.display = 'block';
+                
+                // レーダーチャートを表示
+                renderRadarChart(p);
             }
+            
+            function renderRadarChart(pokemon) {
+                // 既存のチャートがあれば破棄
+                if (radarChart) {
+                    radarChart.destroy();
+                }
+                
+                // チャートデータを準備
+                const statLabels = {
+                    'hp': 'HP',
+                    'attack': '攻撃',
+                    'defense': '防御',
+                    'special-attack': '特攻',
+                    'special-defense': '特防',
+                    'speed': '素早さ'
+                };
+                
+                // ステータスデータを抽出（0-1の範囲に正規化）
+                const maxStat = 255;
+                const stats = Object.keys(statLabels).map(key => ({
+                    label: statLabels[key],
+                    value: pokemon.stats[key] / maxStat
+                }));
+                
+                // タイプ、特性、性格などのマッチ項目
+                const matchCategories = [
+                    { label: 'タイプ相性', value: getMatchScore(pokemon, 'types') },
+                    { label: '特性マッチ', value: getMatchScore(pokemon, 'abilities') },
+                    { label: '性格', value: getMatchScore(pokemon, 'personality') },
+                    { label: '趣味・好み', value: getMatchScore(pokemon, 'activities') },
+                    { label: '苦手', value: getMatchScore(pokemon, 'dislikes') }
+                ];
+                
+                // 全てのデータを結合
+                const chartData = [...stats, ...matchCategories];
+                
+                // ユーザーデータを準備（マッチ項目のみ）
+                const userChartData = [...stats.map(s => ({
+                    label: s.label,
+                    value: getUserStatPreference(s.label)
+                })), ...matchCategories.map(m => ({
+                    label: m.label,
+                    value: 1 // ユーザーの選択は常に1（自分自身との一致は100%）
+                }))];
+                
+                // チャート描画
+                const ctx = document.getElementById('radarChart').getContext('2d');
+                radarChart = new Chart(ctx, {
+                    type: 'radar',
+                    data: {
+                        labels: chartData.map(item => item.label),
+                        datasets: [{
+                            label: 'ポケモン',
+                            data: chartData.map(item => item.value),
+                            backgroundColor: 'rgba(255, 179, 71, 0.2)',
+                            borderColor: 'rgba(255, 179, 71, 1)',
+                            pointBackgroundColor: 'rgba(255, 179, 71, 1)',
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: 'rgba(255, 179, 71, 1)'
+                        },
+                        {
+                            label: 'あなた',
+                            data: userChartData.map(item => item.value),
+                            backgroundColor: 'rgba(126, 200, 80, 0.2)',
+                            borderColor: 'rgba(126, 200, 80, 1)',
+                            pointBackgroundColor: 'rgba(126, 200, 80, 1)',
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: 'rgba(126, 200, 80, 1)'
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            r: {
+                                angleLines: {
+                                    display: true
+                                },
+                                suggestedMin: 0,
+                                suggestedMax: 1
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const value = context.raw;
+                                        return `${context.dataset.label}: ${Math.round(value * 100)}%`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+            
+            // ユーザーのステータス選好度を取得
+            function getUserStatPreference(statLabel) {
+                if (!userProfile || !userProfile.important_stats) return 0.3;
+                
+                // ラベルからステータスキーに変換
+                const keyMap = {
+                    'HP': 'hp',
+                    '攻撃': 'attack',
+                    '防御': 'defense',
+                    '特攻': 'special-attack',
+                    '特防': 'special-defense',
+                    '素早さ': 'speed'
+                };
+                
+                const statKey = keyMap[statLabel] || statLabel;
+                return userProfile.important_stats.includes(statKey) ? 0.8 : 0.3;
+            }
+            
+            // マッチ度計算関数（改良版）
+            function getMatchScore(pokemon, category) {
+                // ユーザープロファイルがない場合はマッチ度を0.3として表示
+                if (!userProfile || !userProfile[category]) return 0.3;
+                
+                // カテゴリに応じたマッチ度計算
+                switch(category) {
+                    case 'types':
+                        if (userProfile.types && pokemon.types) {
+                            const common = userProfile.types.filter(t => pokemon.types.includes(t));
+                            return common.length > 0 ? common.length / Math.max(userProfile.types.length, pokemon.types.length) : 0.2;
+                        }
+                        break;
+                    case 'abilities':
+                        if (userProfile.abilities && pokemon.abilities) {
+                            const common = userProfile.abilities.filter(a => pokemon.abilities.includes(a));
+                            return common.length > 0 ? common.length / Math.max(userProfile.abilities.length, pokemon.abilities.length) : 0.2;
+                        }
+                        break;
+                    case 'personality':
+                        if (userProfile.personality) {
+                            const extra = pokeExtra[pokemon.name];
+                            return extra && extra.personality === userProfile.personality ? 1 : 0.2;
+                        }
+                        break;
+                    case 'activities':
+                        if (userProfile.activities && pokeExtra[pokemon.name]) {
+                            const like = pokeExtra[pokemon.name].like;
+                            return like && userProfile.activities.includes(like) ? 0.9 : 0.2;
+                        }
+                        break;
+                    case 'dislikes':
+                        if (userProfile.dislikes && pokeExtra[pokemon.name]) {
+                            const dislike = pokeExtra[pokemon.name].dislike;
+                            return dislike && userProfile.dislikes.includes(dislike) ? 0.9 : 0.2;
+                        }
+                        break;
+                }
+                
+                return 0.3; // デフォルト値
+            }
+            
             window.showModal = showModal;
         });
         </script>

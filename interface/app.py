@@ -11,6 +11,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def index():
     result = None
+    user_profile = None
     if request.method == 'POST':
         types = request.form.getlist('types')
         abilities = request.form.getlist('abilities')
@@ -27,6 +28,15 @@ def index():
             dislikes=dislikes,
             memo=None
         )
+        # ユーザープロファイルを辞書形式で保存
+        user_profile = {
+            'types': types,
+            'abilities': abilities,
+            'important_stats': important_stats,
+            'personality': personality,
+            'activities': activities,
+            'dislikes': dislikes
+        }
         result = knn_predict(user, k=3)
     # 選択肢用データ
     all_types = [
@@ -49,12 +59,12 @@ def index():
         'special-defense': '特殊防御',
         'speed': 'すばやさ'
     }
-    personalities = ['おだやか','せっかち','真面目','おっとり','やんちゃ','ずる賢い','がんばり屋','おく病','のんびり']
+    personalities = ['おだやか','せっかち','まじめ','おっとり','やんちゃ','ずるがしこい','がんばりや','おくびょう','のんびり']
     activities = ['運動','読書','音楽','冒険','料理','ゲーム','自然歩き','友達と遊ぶ']
     dislikes = ['虫','暗い場所','大きな音','寒さ','暑さ','水','運動','勉強']
     genders = ['男性','女性','その他']
     return render_template('index.html', result=result, all_types=all_types, all_abilities=all_abilities, all_stats=all_stats,
-        personalities=personalities, activities=activities, dislikes=dislikes, genders=genders)
+        personalities=personalities, activities=activities, dislikes=dislikes, genders=genders, user_profile=user_profile)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
