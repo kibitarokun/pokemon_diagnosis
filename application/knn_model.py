@@ -1,4 +1,3 @@
-
 # k-NNによるポケモン診断モデル
 import sys
 import os
@@ -19,8 +18,8 @@ def load_pokemon_dataset() -> List[Dict]:
         return json.load(f)
 
 def knn_predict(user: UserProfile, k=1):
-    all_types, all_abilities, personalities, activities, dislikes, genders = load_metadata()
-    user_vec = vectorize_user_profile(user, all_types, all_abilities, personalities, activities, dislikes, genders)
+    all_types, all_abilities, personalities, activities, dislikes = load_metadata()
+    user_vec = vectorize_user_profile(user, all_types, all_abilities, personalities, activities, dislikes)
     pokemon_vecs = load_pokemon_vectors()
     pokemons = load_pokemon_dataset()
     # 距離計算（ユーザー入力と各ポケモンのベクトル）

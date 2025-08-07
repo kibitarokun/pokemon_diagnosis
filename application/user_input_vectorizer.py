@@ -13,10 +13,9 @@ def load_metadata():
     personalities = ['おだやか','せっかち','真面目','おっとり','やんちゃ','ずる賢い','がんばり屋','おく病','のんびり']
     activities = ['運動','読書','音楽','冒険','料理','ゲーム','自然歩き','友達と遊ぶ']
     dislikes = ['虫','暗い場所','大きな音','寒さ','暑さ','水','運動','勉強']
-    genders = ['男性','女性','その他']
-    return all_types, all_abilities, personalities, activities, dislikes, genders
+    return all_types, all_abilities, personalities, activities, dislikes
 
-def vectorize_user_profile(user: UserProfile, all_types, all_abilities, personalities, activities, dislikes, genders) -> np.ndarray:
+def vectorize_user_profile(user: UserProfile, all_types, all_abilities, personalities, activities, dislikes) -> np.ndarray:
     # types, abilities, important_statsをポケモンと同じ形式でベクトル化
     type_vec = [1 if user.types and t in user.types else 0 for t in all_types]
     ability_vec = [1 if user.abilities and a in user.abilities else 0 for a in all_abilities]
@@ -32,14 +31,14 @@ def vectorize_user_profile(user: UserProfile, all_types, all_abilities, personal
 
 # サンプル利用例
 def main():
-    all_types, all_abilities = load_metadata()
+    all_types, all_abilities, personalities, activities, dislikes = load_metadata()
     user = UserProfile(
         types=['fire', 'flying'],
         abilities=['blaze'],
         important_stats=['speed', 'attack'],
         memo=None
     )
-    vec = vectorize_user_profile(user, all_types, all_abilities)
+    vec = vectorize_user_profile(user, all_types, all_abilities, personalities, activities, dislikes)
     print('ユーザーベクトル:', vec)
 
 if __name__ == '__main__':
