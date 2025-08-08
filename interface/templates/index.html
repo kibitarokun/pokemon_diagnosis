@@ -134,15 +134,12 @@
             <label><input type="checkbox" name="activities" value="{{ a }}">{{ a }}</label>
             {% endfor %}
         </div>
-        <!-- <input type="text" name="activities_text" placeholder="その他（自由記述）" style="width:100%;margin-bottom:12px;"> -->
         <label>苦手なこと</label><br>
         <div class="stat-group">
             {% for d in dislikes %}
             <label><input type="checkbox" name="dislikes" value="{{ d }}">{{ d }}</label>
             {% endfor %}
         </div>
-        <!-- <input type="text" name="dislikes_text" placeholder="その他（自由記述）" style="width:100%;margin-bottom:12px;"> -->
-        <!-- 年齢・性別は診断から除外 -->
         <button type="submit">診断する</button>
     </form>
     {% if result %}
@@ -277,6 +274,7 @@
                 const maxStat = 255;
                 const stats = Object.keys(statLabels).map(key => ({
                     label: statLabels[key],
+                    key: key, // キーを保存して後で参照できるようにする
                     value: pokemon.stats[key] / maxStat
                 }));
                 
@@ -295,7 +293,7 @@
                 // ユーザーデータを準備（マッチ項目のみ）
                 const userChartData = [...stats.map(s => ({
                     label: s.label,
-                    value: getUserStatPreference(s.label)
+                    value: getUserStatPreference(s.label, s.key) // キーを渡して精度向上
                 })), ...matchCategories.map(m => ({
                     label: m.label,
                     value: getUserCategoryValue(m.label) // ユーザー選択を反映した値に変更
@@ -356,8 +354,13 @@
             }
             
             // ユーザーのステータス選好度を取得
-            function getUserStatPreference(statLabel) {
+            function getUserStatPreference(statLabel, statKey) {
                 if (!userProfile || !userProfile.important_stats) return 0.3;
+                
+                // もしkeyが提供されていれば、それを使用
+                if (statKey) {
+                    return userProfile.important_stats.includes(statKey) ? 0.8 : 0.3;
+                }
                 
                 // ラベルからステータスキーに変換
                 const keyMap = {
@@ -369,8 +372,28 @@
                     '素早さ': 'speed'
                 };
                 
-                const statKey = keyMap[statLabel] || statLabel;
-                return userProfile.important_stats.includes(statKey) ? 0.8 : 0.3;
+                const mappedKey = keyMap[statLabel] || statLabel;
+                return userProfile.important_stats.includes(mappedKey) ? 0.8 : 0.3;
+            }
+            
+            // ユーザーのカテゴリー値を取得（新規追加関数）
+            function getUserCategoryValue(categoryLabel) {
+                if (!userProfile) return 0.3;
+                
+                switch(categoryLabel) {
+                    case 'タイプ相性':
+                        return userProfile.types && userProfile.types.length > 0 ? 0.8 : 0.3;
+                    case '特性マッチ':
+                        return userProfile.abilities && userProfile.abilities.length > 0 ? 0.8 : 0.3;
+                    case '性格':
+                        return userProfile.personality ? 0.8 : 0.3;
+                    case '趣味・好み':
+                        return userProfile.activities && userProfile.activities.length > 0 ? 0.8 : 0.3;
+                    case '苦手':
+                        return userProfile.dislikes && userProfile.dislikes.length > 0 ? 0.8 : 0.3;
+                    default:
+                        return 0.5;
+                }
             }
             
             // マッチ度計算関数（改良版）

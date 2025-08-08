@@ -15,7 +15,9 @@ def diagnose():
         types=data.get('types', []),
         abilities=data.get('abilities', []),
         important_stats=data.get('important_stats', []),
-        memo=data.get('memo')
+        personality=data.get('personality'),
+        activities=data.get('activities', []),
+        dislikes=data.get('dislikes', [])
     )
     result = knn_predict(user, k=data.get('k', 3))
     return jsonify(result)

@@ -7,7 +7,10 @@ payload = {
     "types": ["fire", "flying"],
     "abilities": ["blaze"],
     "important_stats": ["speed", "attack"],
-    "k": 3
+    "personality": "おだやか",
+    "activities": ["スポーツ", "読書"],
+    "dislikes": ["高所", "虫"],
+    "k": 3 # 近傍数
 }
 
 response = requests.post(url, json=payload)
