@@ -170,7 +170,7 @@
         </div>
         <!-- モーダルウィンドウ -->
         <div id="modal-bg" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.3);z-index:1000;">
-            <div id="modal" style="background:#fffbe7;border-radius:16px;max-width:340px;margin:60px auto 0 auto;padding:24px 18px;box-shadow:0 4px 24px #e0d9b5;position:relative;max-height:80vh;overflow-y:auto;">
+            <div id="modal" style="background:#fffbe7;border-radius:16px;max-width:340px;margin:60px auto 0 auto;padding:24px 18px;box-shadow:0 4px 24px #e0d9b5;position:relative;max-height:100vh;overflow-y:auto;">
                 <span id="modal-close" style="position:absolute;top:8px;right:16px;font-size:1.5em;cursor:pointer;color:#ffb347;">&times;</span>
                 <div id="modal-content"></div>
                 <!-- レーダーチャート用のキャンバス -->
@@ -298,7 +298,7 @@
                     value: getUserStatPreference(s.label)
                 })), ...matchCategories.map(m => ({
                     label: m.label,
-                    value: 1 // ユーザーの選択は常に1（自分自身との一致は100%）
+                    value: getUserCategoryValue(m.label) // ユーザー選択を反映した値に変更
                 }))];
                 
                 // チャート描画

@@ -3,6 +3,9 @@
 ## Overview
 The Pokémon Diagnosis Application is a DDD-structured tool that helps users identify Pokémon based on their characteristics and preferences. It leverages machine learning (K-Nearest Neighbors, KNN) and integrates with external Pokémon APIs to provide a seamless and extensible user experience. The project is organized by domain, application, infrastructure, and interface layers for maintainability and scalability.
 
+## Note
+The display is set to Japanese. Please change the language/locale in the code as needed.
+
 ## Project Structure
 
 ```
