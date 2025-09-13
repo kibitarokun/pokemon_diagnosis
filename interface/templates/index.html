@@ -156,14 +156,14 @@
             <img src="{{ result.friend.image_url }}" alt="{{ result.friend.name }}">
             <div class="name">{{ result.friend.name_ja if result.friend.name_ja else result.friend.name|capitalize }}</div>
             <div class="types">{{ result.friend.types|join(', ') }}</div>
-            <div style="color:#7ec850;font-size:0.98em;margin-top:4px;">仲良し度: {{ result.friend.match_percent }}%</div>
+            <div style="color:#7ec850;font-size:0.98em;margin-top:4px;">マッチ度: {{ result.friend.match_percent }}%</div>
         </div>
         <h3 style="margin-top:24px;color:#e57373;">天敵ポケモン</h3>
         <div class="poke-card" style="cursor:pointer;" data-idx="2">
             <img src="{{ result.enemy.image_url }}" alt="{{ result.enemy.name }}">
             <div class="name">{{ result.enemy.name_ja if result.enemy.name_ja else result.enemy.name|capitalize }}</div>
             <div class="types">{{ result.enemy.types|join(', ') }}</div>
-            <div style="color:#e57373;font-size:0.98em;margin-top:4px;">天敵度: {{ result.enemy.match_percent }}%</div>
+            <div style="color:#e57373;font-size:0.98em;margin-top:4px;">マッチ度: {{ result.enemy.match_percent }}%</div>
         </div>
         <!-- モーダルウィンドウ -->
         <div id="modal-bg" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.3);z-index:1000;">
