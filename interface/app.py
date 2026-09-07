@@ -69,22 +69,24 @@ def index():
         ("steel", "鋼"),
         ("fairy", "妖精"),
     ]
+    # 「自分の特徴」として選べる表現にしている。
+    # 括弧内は元になったポケモンの特性名（キーは変えないのでベクトルには影響しない）
     all_abilities = [
-        ("overgrow", "植物パワー"),
-        ("chlorophyll", "太陽好き"),
-        ("blaze", "火の力"),
-        ("solar-power", "太陽パワー"),
-        ("torrent", "水の力"),
-        ("rain-dish", "雨で回復"),
-        ("shield-dust", "粉で防御"),
-        ("run-away", "逃げ足"),
-        ("shed-skin", "皮がぬける"),
-        ("compound-eyes", "大きな目"),
-        ("swarm", "虫の仲間"),
-        ("keen-eye", "良い目"),
-        ("tangled-feet", "ふらつく"),
-        ("big-pecks", "がんじょう"),
-        ("guts", "負けない心"),
+        ("overgrow", "追い込まれると力が出る"),  # しんりょく
+        ("chlorophyll", "晴れの日に元気"),  # ようりょくそ
+        ("blaze", "熱くなりやすい"),  # もうか
+        ("solar-power", "夏に強い"),  # サンパワー
+        ("torrent", "土壇場で粘る"),  # げきりゅう
+        ("rain-dish", "雨の日が好き"),  # あめうけざら
+        ("shield-dust", "動じない"),  # りんぷん
+        ("run-away", "逃げ足がはやい"),  # にげあし
+        ("shed-skin", "切り替えが早い"),  # だっぴ
+        ("compound-eyes", "よく気がきく"),  # ふくがん
+        ("swarm", "仲間がいると強い"),  # むしのしらせ
+        ("keen-eye", "ブレない"),  # するどいめ
+        ("tangled-feet", "つかみどころがない"),  # ちどりあし
+        ("big-pecks", "踏ん張りがきく"),  # はとむね
+        ("guts", "逆境に強い"),  # こんじょう
     ]
     all_stats = {
         "hp": "HP",
