@@ -3,7 +3,9 @@ import numpy as np
 from domain.user_profile import UserProfile
 import json
 import os
+from functools import lru_cache
 
+@lru_cache(maxsize=1)
 def load_metadata():
     dataset_path = os.path.join(os.path.dirname(__file__), '../data/pokemon_dataset.json')
     with open(dataset_path, encoding='utf-8') as f:

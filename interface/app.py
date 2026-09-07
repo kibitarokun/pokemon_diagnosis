@@ -1,5 +1,5 @@
 # シンプルでかわいらしいUIのFlaskアプリ
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_from_directory
 import sys
 import os
 
@@ -8,6 +8,14 @@ from domain.user_profile import UserProfile
 from application.knn_model import knn_predict
 
 app = Flask(__name__)
+
+DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
+
+
+@app.route("/static/pokemon_extra.json")
+def pokemon_extra():
+    # data/pokemon_extra.json をそのまま配信する（コピーを持たず単一の情報源にする）
+    return send_from_directory(DATA_DIR, "pokemon_extra.json")
 
 
 @app.route("/", methods=["GET", "POST"])

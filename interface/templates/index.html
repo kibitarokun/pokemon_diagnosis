@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <title>ポケモン診断アプリ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family                html += `<div style='text-align:center;'>`;
-                html += `<img src='${p.image_url}' alt='${p.name}' style='width:120px;height:120px;margin-bottom:8px;'>`;
-                html += `<div style='font-weight:bold;font-size:1.2em;color:#ffb347;'>${p.name_ja || (p.name.charAt(0).toUpperCase() + p.name.slice(1))}</div>`;
-                html += `<div style='color:#888;'>タイプ: ${p.types.join(', ')}</div>`;
-                html += `<div style='color:#888;'>特性: ${p.abilities.join(', ')}</div>`;
-                html += `<div style='margin-top:8px;'>`;
-                html += `<table style='margin:0 auto;font-size:0.95em;'>`;+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
@@ -166,8 +160,8 @@
             <div style="color:#e57373;font-size:0.98em;margin-top:4px;">マッチ度: {{ result.enemy.match_percent }}%</div>
         </div>
         <!-- モーダルウィンドウ -->
-        <div id="modal-bg" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.3);z-index:1000;">
-            <div id="modal" style="background:#fffbe7;border-radius:16px;max-width:340px;margin:60px auto 0 auto;padding:24px 18px;box-shadow:0 4px 24px #e0d9b5;position:relative;max-height:100vh;overflow-y:auto;">
+        <div id="modal-bg" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.3);z-index:1000;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:40px 12px;box-sizing:border-box;">
+            <div id="modal" style="background:#fffbe7;border-radius:16px;max-width:340px;margin:0 auto;padding:24px 18px;box-shadow:0 4px 24px #e0d9b5;position:relative;box-sizing:border-box;">
                 <span id="modal-close" style="position:absolute;top:8px;right:16px;font-size:1.5em;cursor:pointer;color:#ffb347;">&times;</span>
                 <div id="modal-content"></div>
                 <!-- レーダーチャート用のキャンバス -->
@@ -248,7 +242,10 @@
                 }
                 html += `</div>`;
                 document.getElementById('modal-content').innerHTML = html;
-                document.getElementById('modal-bg').style.display = 'block';
+                const modalBg = document.getElementById('modal-bg');
+                modalBg.style.display = 'block';
+                // 開くたびに先頭から表示する
+                modalBg.scrollTop = 0;
                 
                 // レーダーチャートを表示
                 renderRadarChart(p);

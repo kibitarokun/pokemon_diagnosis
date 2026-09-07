@@ -1,129 +1,128 @@
-# Pokémon Diagnosis Application
+# ポケモン診断アプリケーション
 
-## Overview
-The Pokémon Diagnosis Application is a DDD-structured tool that helps users identify Pokémon based on their characteristics and preferences. It leverages machine learning (K-Nearest Neighbors, KNN) and integrates with external Pokémon APIs to provide a seamless and extensible user experience. The project is organized by domain, application, infrastructure, and interface layers for maintainability and scalability.
+## 概要
+ポケモン診断アプリケーションは、ユーザーの特徴や好みをもとに、ぴったりのポケモンを診断する DDD 構成のツールです。機械学習（K近傍法・KNN）を利用し、外部のポケモン API と連携することで、シンプルかつ拡張しやすいユーザー体験を提供します。プロジェクトはドメイン層・アプリケーション層・インフラストラクチャ層・インターフェース層に分割されており、保守性と拡張性を確保しています。
 
-## Note
-The display is primarily in Japanese with radar chart visualization to show matching characteristics between users and Pokémon. The application includes Japanese Pokémon names and descriptions for an authentic experience.
+## 補足
+表示は主に日本語で、レーダーチャートによってユーザーとポケモンの特徴の一致度を可視化します。日本語のポケモン名や説明文にも対応しています。
 
-## Project Structure
+## プロジェクト構成
 
 ```
 application/
-    data_collector.py         # Collects and processes Pokémon data
-    knn_model.py              # Implements the KNN model for predictions
-    preprocess.py             # Preprocessing utilities for data
-    user_input_vectorizer.py  # Converts user input into vector format
-    add_pokemon_usecase.py    # Use case for adding Pokémon data from API
+    knn_model.py              # 予測用の KNN モデル
+    preprocess.py             # データの前処理ユーティリティ
+    user_input_vectorizer.py  # ユーザー入力のベクトル化
+    add_pokemon_usecase.py    # API からポケモンデータを追加するユースケース
 
 data/
-    pokemon_dataset.json      # Core dataset of Pokémon (ID1-1000 supported)
-    pokemon_extra.json        # Additional Pokémon data (personality, likes, etc.)
-    pokemon_vectors.npy       # Preprocessed Pokémon vectors
+    pokemon_dataset.json      # ポケモンの基本データセット（ID1〜1000 に対応）
+    pokemon_extra.json        # 追加データ（性格・好みなど）
+    pokemon_vectors.npy       # 前処理済みのポケモンベクトル
 
 domain/
-    pokemon.py                # Pokémon domain model (entity)
-    pokemon_repository.py     # Pokémon repository interface (abstract)
-    user_profile.py           # User profile domain model
+    pokemon.py                # ポケモンのドメインモデル（エンティティ）
+    pokemon_repository.py     # ポケモンリポジトリのインターフェース（抽象）
+    user_profile.py           # ユーザープロファイルのドメインモデル
 
 infrastructure/
-    pokeapi_client.py         # Client for interacting with the Pokémon API
-    pokemon_json_repository.py# JSON repository implementation for Pokémon
+    pokeapi_client.py         # ポケモン API のクライアント
+    pokemon_json_repository.py# JSON によるポケモンリポジトリ実装
 
 interface/
-    api_test.py               # Tests for the API
-    api.py                    # API implementation
-    app.py                    # Main application entry point (Flask)
-    static/                   # Static files (e.g., JSON, images)
-    templates/                # HTML templates for the web interface
+    api_test.py               # API のテスト
+    api.py                    # API の実装
+    app.py                    # アプリケーションのエントリポイント（Flask）
+    static/                   # 静的ファイル（JSON、画像など）
+    templates/                # Web 画面用の HTML テンプレート
 
 tools/
-    add_pokemon_1_1000.py     # Script to auto-add Pokémon ID1-1000 from API
-    fetch_flavor_text.py      # Script to fetch Pokémon descriptions
-    fetch_japanese_names.py   # Script to fetch Japanese Pokémon names
-    generate_pokemon_extra.py # Script to generate additional Pokémon data
+    add_pokemon_1_1000.py     # API から ID1〜1000 のポケモンを一括追加するスクリプト
+    fetch_flavor_text.py      # ポケモンの説明文を取得するスクリプト
+    fetch_japanese_names.py   # ポケモンの日本語名を取得するスクリプト
+    generate_pokemon_extra.py # 追加データを生成するスクリプト
 ```
 
-## Features
-- **Pokémon Identification**: Predicts Pokémon based on user input.
-- **Machine Learning**: Uses KNN for accurate predictions.
-- **API Integration**: Fetches and extends data from external Pokémon APIs (pokeAPI).
-- **DDD Structure**: Domain-driven design for clear separation of concerns.
-- **Data Auto-Expansion**: Easily expand dataset up to ID1000 with provided scripts.
-- **Web Interface**: User-friendly web interface for interaction.
-- **Radar Chart Visualization**: Visual representation of matching characteristics.
-- **Japanese Localization**: Includes Japanese Pokémon names and descriptions.
+## 主な機能
+- **ポケモン診断**: ユーザーの入力からポケモンを予測します。
+- **機械学習**: KNN による精度の高い予測を行います。
+- **API 連携**: 外部のポケモン API（PokeAPI）からデータを取得・拡張します。
+- **DDD 構成**: ドメイン駆動設計により関心事を明確に分離しています。
+- **データの自動拡張**: 付属スクリプトで ID1000 までデータセットを簡単に拡張できます。
+- **Web インターフェース**: 使いやすい Web 画面から操作できます。
+- **レーダーチャート表示**: 一致する特徴を視覚的に確認できます。
+- **日本語対応**: 日本語のポケモン名・説明文を収録しています。
 
-## Installation
+## インストール
 
-1. Clone the repository:
+1. リポジトリをクローンします:
    ```bash
    git clone https://github.com/your-repo/pokemon_diagnosis.git
    cd pokemon_diagnosis
    ```
 
-2. Set up a Python virtual environment and install dependencies:
+2. Python の仮想環境を作成し、依存パッケージをインストールします:
    ```bash
    python3 -m venv .venv
-   source .venv/bin/activate  # macOS/Linux
-   # or
+   source .venv/bin/activate  # macOS / Linux
+   # または
    .venv\Scripts\activate     # Windows
    pip install -r requirements.txt
    ```
 
-3. (Optional) Auto-expand Pokémon data to ID1000:
+3. （任意）ポケモンデータを ID1000 まで自動拡張します:
    ```bash
    .venv/bin/python tools/add_pokemon_1_1000.py
-   .venv/bin/python tools/fetch_flavor_text.py      # Fetch Pokémon descriptions
-   .venv/bin/python tools/fetch_japanese_names.py   # Fetch Japanese names
-   .venv/bin/python tools/generate_pokemon_extra.py # Generate extra data
-   .venv/bin/python application/preprocess.py       # Regenerate vector data
+   .venv/bin/python tools/fetch_flavor_text.py      # 説明文を取得
+   .venv/bin/python tools/fetch_japanese_names.py   # 日本語名を取得
+   .venv/bin/python tools/generate_pokemon_extra.py # 追加データを生成
+   .venv/bin/python application/preprocess.py       # ベクトルデータを再生成
    ```
 
-4. Run the application:
+4. アプリケーションを起動します:
    ```bash
    .venv/bin/python interface/app.py
    ```
 
-## Usage
-- Open your browser and navigate to `http://localhost:5001`.
-- Follow the instructions on the web interface to input your preferences and get Pokémon predictions.
+## 使い方
+- ブラウザで `http://localhost:5001` を開きます。
+- Web 画面の案内に従って好みを入力すると、診断結果が表示されます。
 
-## Development Environment
+## 開発環境
 
-1. **First time only**: Create virtual environment and install packages
+1. **初回のみ**: 仮想環境の作成とパッケージのインストール
    ```bash
    python3 -m venv .venv
-   source .venv/bin/activate  # macOS/Linux
-   # or
+   source .venv/bin/activate  # macOS / Linux
+   # または
    .venv\Scripts\activate     # Windows
    pip install -r requirements.txt
    ```
 
-2. **Subsequent use**: Only activate the virtual environment
+2. **2回目以降**: 仮想環境を有効化するだけです
    ```bash
-   source .venv/bin/activate  # macOS/Linux
-   # or
+   source .venv/bin/activate  # macOS / Linux
+   # または
    .venv\Scripts\activate     # Windows
    ```
 
-3. **Start the application**:
+3. **アプリケーションの起動**:
    ```bash
    .venv/bin/python interface/app.py
    ```
 
-4. **Using the API**:
+4. **API の利用**:
    ```bash
    curl -X POST -H "Content-Type: application/json" -d '{"types":["fire"], "personality":"おだやか"}' http://localhost:5001/diagnose
    ```
 
-## Virtual Environment Notes
-- Packages in the virtual environment are stored in the `.venv` folder and persisted between computer restarts
-- Reinstalling packages is only necessary if you delete and recreate the virtual environment or update `requirements.txt`
-- Activating the virtual environment is required each time you open a new terminal session
+## 仮想環境に関する注意
+- 仮想環境のパッケージは `.venv` フォルダに保存され、PC を再起動しても保持されます
+- パッケージの再インストールが必要になるのは、仮想環境を削除して作り直した場合や `requirements.txt` を更新した場合のみです
+- 新しいターミナルを開くたびに、仮想環境の有効化が必要です
 
-## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request.
+## コントリビュート
+コントリビュートを歓迎します。リポジトリをフォークして、プルリクエストを送ってください。
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## ライセンス
+本プロジェクトは MIT ライセンスで公開されています。詳細は LICENSE ファイルを参照してください。

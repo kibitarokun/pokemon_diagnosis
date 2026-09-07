@@ -5,13 +5,16 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import numpy as np
 import json
 from typing import List, Dict
+from functools import lru_cache
 from domain.user_profile import UserProfile
 from application.user_input_vectorizer import load_metadata, vectorize_user_profile
 
+@lru_cache(maxsize=1)
 def load_pokemon_vectors() -> np.ndarray:
     vec_path = os.path.join(os.path.dirname(__file__), '../data/pokemon_vectors.npy')
     return np.load(vec_path)
 
+@lru_cache(maxsize=1)
 def load_pokemon_dataset() -> List[Dict]:
     dataset_path = os.path.join(os.path.dirname(__file__), '../data/pokemon_dataset.json')
     with open(dataset_path, encoding='utf-8') as f:

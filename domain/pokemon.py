@@ -1,6 +1,6 @@
 # ポケモンのドメインモデル
 from dataclasses import dataclass
-from typing import List, Dict
+from typing import List, Dict, Optional
 
 @dataclass
 class Pokemon:
@@ -9,4 +9,4 @@ class Pokemon:
     types: List[str]
     abilities: List[str]
     stats: Dict[str, int]
-    nature: str = None  # 性格（オプション）
+    nature: Optional[str] = None  # 性格（オプション）
