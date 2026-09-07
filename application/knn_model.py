@@ -32,14 +32,8 @@ def knn_predict(user: UserProfile, k=1):
     best_idx = sorted_idxs[0]
     friend_idx = sorted_idxs[1] if len(sorted_idxs) > 1 else sorted_idxs[0]
     enemy_idx = sorted_idxs[-1]
-    max_dist = np.max(dists) if np.max(dists) > 0 else 1
-    min_dist = np.min(dists)
     def make_result(i):
-        score = 1 - (dists[i] - min_dist) / (max_dist - min_dist) if max_dist != min_dist else 1.0
-        match_percent = int(score * 100)
-        p = pokemons[i].copy() if isinstance(pokemons[i], dict) else pokemons[i].__dict__.copy()
-        p['match_percent'] = match_percent
-        return p
+        return pokemons[i].copy() if isinstance(pokemons[i], dict) else pokemons[i].__dict__.copy()
     return {
         'best': make_result(best_idx),
         'friend': make_result(friend_idx),
